@@ -16,13 +16,13 @@ Checks the text for any invalid emojis. Returns False if an invalid emoji is fou
 
 `is_safe = EHO.check()`
 
-• EmojiHandlerObject.fix(colon=False) Returns modified string (of EmojiHandlerObject text
+• EmojiHandlerObject.fix(colon=False) Returns modified string
 
 Checks the text for any invalid emojis and replaces found ones with just the emoji name (default) or with wrapped with `:` if `colon` is True.
 
 `safe_text = EHO.fix(colon=True)` 
 
-• EmojiHandlerObject(text='🤔', invalid_only=True) | Returns modified string (of EmojiHandlerObject text
+• EmojiHandlerObject(text='🤔', invalid_only=True) | Returns modified string
 
 Checks the text for invalid emojis and replaces found ones with `text` (default: '🤔'). By default only invalid emojis are replaced but you can set `invalid_only` to False to replace all emojis.
 
