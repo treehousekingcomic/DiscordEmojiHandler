@@ -22,7 +22,7 @@ class EmojiHandler():
         for result in self.emojis:
             id_ = int(result[2])
 
-            emoji = self.bot.get_emoji(id)
+            emoji = self.bot.get_emoji(id_)
             if not emoji:
                 return False
             elif not emoji.is_usable():
