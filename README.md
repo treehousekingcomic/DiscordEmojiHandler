@@ -26,4 +26,4 @@ Checks the text for any invalid emojis and replaces found ones with just the emo
 
 Checks the text for invalid emojis and replaces found ones with `text` (default: '🤔'). By default only invalid emojis are replaced but you can set `invalid_only` to False to replace all emojis.
 
-`safe_text = EHO.replace(text='[some emoji here], invalid_only=False`
+`safe_text = EHO.replace(text='[an emoji was here], invalid_only=False`)
