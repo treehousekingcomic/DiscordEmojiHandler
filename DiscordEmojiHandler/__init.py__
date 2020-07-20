@@ -1,0 +1,1 @@
+from DiscordEmojiHandler.EmojiHandlerModule import *
