@@ -20,30 +20,7 @@ class EmojiHandler():
     def check(self):
         # Returns True if all emojis in the text are available to the bot, False if not.
         for result in self.emojis:
-            '''
-            for id in result:
-                try:
-                    id = int(id)
-                execpt:
-                    continue
-                else:
-                    break
-            for animated in result:
-                if type(animated) == str:
-                    if animated == 'a':
-                        animated = True
-                        break
-                    else:
-                        animated = False
-                        break
-            for name in result:
-                if type(name) == str:
-                    if len(animated) > 1:
-                        break
-            '''
             id = int(result[2])
-            # name = result[1]
-            # animated = True if result[0] == 'a' else False
 
             emoji = self.bot.get_emoji(id)
             if not emoji:
