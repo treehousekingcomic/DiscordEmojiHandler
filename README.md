@@ -10,18 +10,20 @@ import EmojiHandlerModule as EHM
 EHO = EHM.EmojiHandler(bot, text)
 ```
 
-• EmojiHandlerObject.check()
+• EmojiHandlerObject.check() Returns True or False
 
 Checks the text for any invalid emojis. Returns False if an invalid emoji is found, else retunrs True. You do not need to pass anything in check.
 
-`safe = EHO.check()`
+`is_safe = EHO.check()`
 
-• EmojiHandlerObject.fix(colon=False)
+• EmojiHandlerObject.fix(colon=False) Returns modified string (of EmojiHandlerObject text
 
 Checks the text for any invalid emojis and replaces found ones with just the emoji name (default) or with wrapped with `:` if `colon` is True.
 
-`safe = EHO.fix(colon=True)` 
+`safe_text = EHO.fix(colon=True)` 
 
-• EmojiHandlerObject(text='🤔', invalid_only=True)
+• EmojiHandlerObject(text='🤔', invalid_only=True) | Returns modified string (of EmojiHandlerObject text
 
 Checks the text for invalid emojis and replaces found ones with `text` (default: '🤔'). By default only invalid emojis are replaced but you can set `invalid_only` to False to replace all emojis.
+
+`safe_text = EHO.replace(text='[some emoji here], invalid_only=False`
