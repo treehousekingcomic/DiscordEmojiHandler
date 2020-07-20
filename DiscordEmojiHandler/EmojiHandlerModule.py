@@ -20,10 +20,12 @@ class EmojiHandler():
     def check(self):
         # Returns True if all emojis in the text are available to the bot, False if not.
         for result in self.emojis:
-            id = int(result[2])
+            id_ = int(result[2])
 
             emoji = self.bot.get_emoji(id)
             if not emoji:
+                return False
+            elif not emoji.is_usable():
                 return False
             else:
                 continue
@@ -33,13 +35,11 @@ class EmojiHandler():
         # Returns original content with the emojis that the bot can't see replaced with their name only.
         # If colon is True, invalid emojis are replaced with :name: (with the :)
         for result in self.emojis:
-            id = int(result[2])
-            name = result[1]
-            animated = result[0]
+            id_, name_, animated_ = result
 
-            emoji = self.bot.get_emoji(id)
-            if not emoji:
-                self.content = self.content.replace(f'<{animated}:{name}:{id}>', f'{name if not colon else ":" + name + ":"}')
+            emoji = self.bot.get_emoji(id_)
+            if not emoji or not emoji.is_usable():
+                self.content = self.content.replace(f'<{animated_}:{name_}:{id}>', f'{name if not colon else ":" + name_ + ":"}')
             else:
                 continue
         return self.content
@@ -48,16 +48,13 @@ class EmojiHandler():
         # Returns the original content with invalid emojis replaced with text (default: 🤔)
         # If you want to replace all emojis, pass False to invalid_only
         for result in self.emojis:
-            id = int(result[2])
-            name = result[1]
-            animated = result[0]
+            id_, name_, animated_ = result
 
-            emoji = self.bot.get_emoji(id)
-            if not emoji:
-                self.content = self.content.replace(f'<{animated}:{name}:{id}>', text)
+            emoji = self.bot.get_emoji(id_)
+            if not emoji or not emoji.is_usable():
+                self.content = self.content.replace(f'<{animated_}:{name_}:{id}>', text)
+            elif not invalid_only:
+                    self.content = self.content.replace(f'<{animated_}:{name_}:{id}>', text)
             else:
-                if not invalid_only:
-                    self.content = self.content.replace(f'<{animated}:{name}:{id}>', text)
-                else:
-                    continue
+                continue
         return self.content
