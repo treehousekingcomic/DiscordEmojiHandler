@@ -1,12 +1,15 @@
 # discord-emoji-handler
 Work with messages that contain emojis that your bot can't see? Emoji Handler will take care of the problem.
 
+## Installation
+`pip install DiscordEmojiHandler`
+
 ## Available Functions & Usage
 To start you must initiate and get a EmojiHandlerObject from the EmojiHandler class.
 You'll need to pass your bot's instance (or client) and the text to work with (string).
 
 ```py
-import EmojiHandlerModule as EHM
+import DiscordEmojiHandler as EHM
 EHO = EHM.EmojiHandler(bot, text)
 ```
 
