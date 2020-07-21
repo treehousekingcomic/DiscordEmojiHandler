@@ -14,7 +14,7 @@ EHO = EHM.EmojiHandler(bot)
 ```
 Now you can save `EHO` as a bot variable to use anywhere else.
 
-- EmojiHandlerObject.check(text) Returns True or False
+- ```EmojiHandlerObject.check(text) Returns True or False ```
 
 Checks the text for any invalid emojis. Returns False if an invalid emoji is found, else retunrs True. You do not need to pass anything in check.
 
