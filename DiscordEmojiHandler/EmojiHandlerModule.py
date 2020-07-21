@@ -7,14 +7,15 @@ class EmojiHandler_NoEmojis(EmojiHandlerError):
 
 class EmojiHandler():
     # regex module required (import re)
-    def __init__(self, bot, content: str):
+    def __init__(self, bot, content: str, no_raise=False):
         # bot can be discord.Client or discord.ext.Bot
         # content is the text to check
+        # When no_raise is false, EmojiHandler_NoEmojis is raised when the content contains no emijis, if True not raised.
         self.bot = bot
         self.content = content
         self.emoji_regex = r'<(?P<animated>a?):(?P<name>[a-zA-Z0-9_]{2,32}):(?P<id>[0-9]{18,22})>'
         self.emojis = re.findall(self.emoji_regex, self.content)
-        if not self.emojis:
+        if not self.emojis and not no_raise:
             raise EmojiHandler_NoEmojis("No emojis in content.")
 
     def check(self):
