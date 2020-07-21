@@ -33,7 +33,7 @@ class EmojiHandler():
 
             emoji = self.bot.get_emoji(id_)
             if not emoji or not emoji.is_usable():
-                content = content.replace(f'<{animated_}:{name_}:{id}>', f'{name if not colon else ":" + name_ + ":"}')
+                content = content.replace(f'<{animated_}:{name_}:{id_}>', f'{name if not colon else ":" + name_ + ":"}')
             else:
                 continue
         return content
@@ -48,9 +48,9 @@ class EmojiHandler():
 
             emoji = self.bot.get_emoji(id_)
             if not emoji or not emoji.is_usable():
-                content = content.replace(f'<{animated_}:{name_}:{id}>', text)
+                content = content.replace(f'<{animated_}:{name_}:{id_}>', text)
             elif not invalid_only:
-                    content = content.replace(f'<{animated_}:{name_}:{id}>', text)
+                    content = content.replace(f'<{animated_}:{name_}:{id_}>', text)
             else:
                 continue
         return content
