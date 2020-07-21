@@ -25,3 +25,6 @@ Checks the text for any invalid emojis and replaces found ones with just the emo
 - ```EmojiHandlerObject(content, text='🤔', invalid_only=True)``` | Returns modified string
 
 Checks the text for invalid emojis and replaces found ones with `text` (default: '🤔'). By default only invalid emojis are replaced but you can set `invalid_only` to False to replace all emojis.
+
+
+Version 1.6 has changed the way that the EmojiHandler class works.
