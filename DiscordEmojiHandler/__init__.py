@@ -1,1 +1,2 @@
-from DiscordEmojiHandler.EmojiHandlerModule import *
+#from DiscordEmojiHandler.EmojiHandlerModule import *
+from EmojiHandlerModule import *
