@@ -1,3 +1,3 @@
-#from DiscordEmojiHandler.EmojiHandlerModule import *
-from EmojiHandlerModule import *
-version = 1.6
+from DiscordEmojiHandler.EmojiHandlerModule import *
+from DiscordEmojiHandler.EmojiHandlerInfo import *
+#from EmojiHandlerModule import *
