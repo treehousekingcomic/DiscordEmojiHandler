@@ -29,9 +29,9 @@ class EmojiHandler():
             return None
         emojis = re.findall(self.emoji_regex, content)
         for result in emojis:
-            id_, name_, animated_ = result
+            animated_, name_, id_ = result
 
-            emoji = self.bot.get_emoji(id_)
+            emoji = self.bot.get_emoji(int(id_))
             if not emoji or not emoji.is_usable():
                 content = content.replace(f'<{animated_}:{name_}:{id_}>', f'{name_ if not colon else ":" + name_ + ":"}')
             else:
@@ -44,9 +44,9 @@ class EmojiHandler():
         if not content:
             return None
         for result in self.emojis:
-            id_, name_, animated_ = result
+            animated_, name_, id_ = result
 
-            emoji = self.bot.get_emoji(id_)
+            emoji = self.bot.get_emoji(int(id_))
             if not emoji or not emoji.is_usable():
                 content = content.replace(f'<{animated_}:{name_}:{id_}>', text)
             elif not invalid_only:
