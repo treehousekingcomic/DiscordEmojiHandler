@@ -1,5 +1,7 @@
-# discord-emoji-handler | **Updated for v1.6**
+# discord-emoji-handler | **Updated for v1.7**
 Work with messages that contain emojis that your bot can't see? Emoji Handler will take care of the problem.
+
+**THE LATEST VERSION IS 1.6, HOWEVER IT DOES NOT WORK. VERSION 1.7 WILL BE RELEASED SOON**
 
 ## Installation
 `pip install DiscordEmojiHandler`
