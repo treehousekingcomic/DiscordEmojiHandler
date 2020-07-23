@@ -43,7 +43,8 @@ class EmojiHandler():
         # If you want to replace all emojis, pass False to invalid_only
         if not content:
             return None
-        for result in self.emojis:
+        emojis = re.findall(self.emoji_regex, content)
+        for result in emojis:
             animated_, name_, id_ = result
 
             emoji = self.bot.get_emoji(int(id_))
