@@ -29,4 +29,4 @@ Checks the text for any invalid emojis and replaces found ones with just the emo
 Checks the text for invalid emojis and replaces found ones with `text` (default: '🤔'). By default only invalid emojis are replaced but you can set `invalid_only` to False to replace all emojis.
 
 
-Version 1.6 has changed the way that the EmojiHandler class works.
+Version 1.6 has changed the way that the EmojiHandler class works. However all versions below 1.7 are not supported as they don't work.
