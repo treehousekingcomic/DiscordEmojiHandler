@@ -40,7 +40,7 @@ class EmojiHandler():
 
     def replace(self, content, text='🤔', invalid_only=True):
         # Returns the original content with invalid emojis replaced with text (default: 🤔)
-        # If you want to replace all emojis, pass False to invalid_only
+        # If you want to replace all emojis pass False to invalid_only
         if not content:
             return None
         emojis = re.findall(self.emoji_regex, content)
