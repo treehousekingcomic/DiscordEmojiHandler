@@ -54,7 +54,7 @@ class EmojiHandler:
         content : str
             the text to fix the emojis from
         colon : bool, optional
-            If this is True, invalid emojis are replaced with :name: (with the :), by default False
+            If this is True, invalid emojis have a colon (eg. :name:), by default False
 
         Returns
         -------
