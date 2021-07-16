@@ -78,10 +78,10 @@ Get the original content with invalid emojis replaced with text.
 
 - ## Parameters
 
-  - **`content`** `str` — the content to replace the original emojis from
+  - **`content`**: `str` — the content to replace the original emojis from
 
-  - **`text`** `Optional[str]` — the text that the content should be replaced with, by default "🤔"
-  - **`invalid_only`** `Optional[bool]` — whether to only replace invalid or not, passing False will replace all emojis, by default `True`
+  - **`text`**: `Optional[str]` — the text that the content should be replaced with, by default "🤔"
+  - **`invalid_only`**: `Optional[bool]` — whether to only replace invalid or not, passing False will replace all emojis, by default `True`
 
 - ## Returns
 
