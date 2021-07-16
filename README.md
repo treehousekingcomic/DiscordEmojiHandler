@@ -44,7 +44,7 @@ Checks the text for any invalid emojis and replaces found ones with just the emo
 
 Checks the text for invalid emojis and replaces found ones with `text` (default: '🤔'). By default only invalid emojis are replaced but you can set `invalid_only` to False to replace all emojis.
 
-**For some better documentation see `docs.md`**
+**For some better documentation see [docs.md](docs.md)**
 
 --------------------------------
 
