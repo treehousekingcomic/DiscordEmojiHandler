@@ -15,12 +15,12 @@ A emoji handler that handles the emojis
    import DiscordEmojiHandler as EHM
    
    bot = commands.Bot(command_prefix="!")
-   emoji_handler = EHM.EmojiHandler(bot)
+   bot.emoji_handler = EHM.EmojiHandler(bot)
 
    @bot.command()
    async def say(ctx, *, text):
       """Command that says what you tell the bot to say"""
-      fixed_text = emoji_handler.fix(text)
+      fixed_text = bot.emoji_handler.fix(text)
       await ctx.send(fixed_text)
 
    bot.run("TOKEN")
