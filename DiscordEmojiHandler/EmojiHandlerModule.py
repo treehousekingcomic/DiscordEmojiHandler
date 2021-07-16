@@ -7,12 +7,14 @@ from discord.ext import commands
 class EmojiHandler:
     """The main EmojiHandler class."""
 
-    def __init__(self, bot: Union[discord.Client, commands.Bot]):
+    def __init__(
+        self, bot: Union[discord.Client, commands.Bot, commands.AutoShardedBot]
+    ):
         """Initialize the emoji handler.
 
         Parameters
         ----------
-        bot : Union[discord.Client, discord.ext.commands.Bot]
+        bot : Union[discord.Client, discord.ext.commands.Bot, commands.AutoShardedBot]
             the bot to handle emojis form
         """
         self.bot = bot

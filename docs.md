@@ -4,7 +4,7 @@ A emoji handler that handles the emojis
 
 - ## Arguments
 
-  - **`bot`**: `discord.Client or commands.Bot` —
+  - **`bot`**: `discord.Client or commands.Bot or commands.AutoShardedBot` —
     the bot the handle the emojis from
 
 - ## Example
