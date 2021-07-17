@@ -3,13 +3,13 @@ from distutils.core import setup
 setup(
     name="DiscordEmojiHandler",  # How you named your package folder (MyLib)
     packages=["DiscordEmojiHandler"],  # Chose the same as "name"
-    version="1.7",  # Start with a small number and increase it with every change you make
+    version="1.8",  # Start with a small number and increase it with every change you make
     license="MIT",  # Chose a license from here: https://help.github.com/articles/licensing-a-repository
     description="Work with messages that contain emojis that your bot can't see? Emoji Handler will take care of the problem.",  # Give a short description about your library
     author="Ali S.",  # Type in your name
     author_email="discordemojihandler@thkc.space",  # Type in your E-Mail
     url="https://github.com/treehousekingcomic/DiscordEmojiHandler",  # Provide either the link to your github or to your website
-    download_url="https://github.com/treehousekingcomic/DiscordEmojiHandler/archive/v1.7.tar.gz",  # I explain this later on
+    download_url="https://github.com/treehousekingcomic/DiscordEmojiHandler/archive/v1.8.tar.gz",  # I explain this later on
     keywords=[
         "discord.py",
         "emojis",
