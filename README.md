@@ -1,4 +1,4 @@
-# DiscordEmojiHandler | **Updated for v1.7**
+# DiscordEmojiHandler | **v1.8**
 
 Work with messages that contain emojis that your bot can't see? Emoji Handler will take care of the problem.
 
@@ -48,4 +48,4 @@ Checks the text for invalid emojis and replaces found ones with `text` (default:
 
 --------------------------------
 
-Version 1.6 has changed the way that the EmojiHandler class works. However all versions below 1.7 are not supported as they don't work.
+The DiscordEmojiHandler rewrite (version 1.6) changed the way that the EmojiHandler class works. However all versions below 1.7 are not supported as they don't work because the library was fixed in version 1.7 after critical mistakes were realized.
