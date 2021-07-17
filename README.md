@@ -2,7 +2,7 @@
 
 Work with messages that contain emojis that your bot can't see? Emoji Handler will take care of the problem.
 
-## **ALL `DISCORD.PY` VERSIONS BELOW 1.7 DO NOT WORK**
+## **ALL `DISCORD.PY` VERSIONS BELOW 1.3 DO NOT WORK**
 
 ## Installation
 
@@ -48,4 +48,4 @@ Checks the text for invalid emojis and replaces found ones with `text` (default:
 
 --------------------------------
 
-The DiscordEmojiHandler rewrite (version 1.6) changed the way that the EmojiHandler class works. However all versions below 1.7 are not supported as they don't work because the library was fixed in version 1.7 after critical mistakes were realized.
+The DiscordEmojiHandler rewrite (version 1.6) changed the way that the EmojiHandler class works. However all versions below 1.7 are not supported as they don't work because the library was fixed in version 1.7 after critical mistakes were realized. 
